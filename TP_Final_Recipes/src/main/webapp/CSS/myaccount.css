@@ -1,0 +1,384 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan. 13, 2025, 3:19:37 p.m.
+    Author     : ahmed
+*/
+:root 
+{
+  --green: #3a5a40;
+  --white: #FFF8E1;
+  --red: #E94E34;
+  --yellow: #FFC107;
+  --grey: #333333;
+}
+
+
+body 
+{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  padding-top : 6vh;
+  
+}
+
+.my-account-page {
+    width : 100vw;
+    height : 94vh;
+    display : flex;
+    
+}
+.my-account-grocery-list-column
+{
+    width : 70%;
+    height : 100%;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    gap : 2em;
+}
+
+.grocery-list-container
+{
+    width : 30%;
+    height : 95%;
+    background-color : #a3b18a;
+    border-radius : 3em;
+    text-align: center;
+    
+}
+
+
+.lists-title-container
+{
+    width : 100%;
+    height : 10%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding : auto;
+    font-size: 2em;
+    color : var(--white);
+    border-bottom : 0.3em solid var(--white);
+}
+
+
+
+
+.ingredient-list-container
+{
+    width : 65%;
+    height : 95%;
+    background-color : #a3b18a;
+    border-radius : 3em;
+    text-align: center;   
+}
+
+.my-account-settings-column 
+{
+    width : 30%;
+    height : 100%;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.settings-container
+{
+    width : 90%;
+    height : 95%;
+    text-align: center;
+    position : relative;
+}
+
+.settings-account
+{
+    width : 100%;
+    height : 48%;
+    background-color : #a3b18a;
+    border-radius : 3em;
+    text-align: center;
+    display : flex;
+    flex-direction : column;
+}
+
+.settings-grocery-list
+{
+    width : 100%;
+    height : 48%;
+    background-color : #a3b18a;
+    border-radius : 3em;
+    text-align: center;
+    position : absolute;
+    bottom: 0;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+}
+
+
+.user-credentials
+{
+    width: 100%;
+    height: 20%;
+    display : flex;
+    align-items : center;
+    padding-top : 1em;
+    padding-bottom : 1em;
+    border-bottom: 0.5em solid var(--white);
+}
+
+.user-avatar
+{
+    width : 20%;
+    height : 80%;
+}
+
+.user-credentials img
+{
+    width : auto;
+    height : 100%;
+    object-fit : contain;
+    padding-left : 2em;
+    padding-right : 1em;
+}
+
+.user-name
+{
+    width : 80%;
+    height : 80%;
+    display:flex;
+    flex-direction : column;
+    padding-left : 1em;
+    padding-top : auto;
+    justify-content: center;
+}
+
+.user-fullname
+{
+    font-size: 2em;
+    padding-top : 0;
+    color : var(--white);
+    text-align:start;
+}
+
+.user-username 
+{
+    color : var(--white);
+    font-size: 1em;
+    text-align:start;
+    font-weight: bold;
+}
+
+.account-info
+{
+    width : 100%;
+    height : 80%;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items: center;   
+}
+
+.email , .status , .security-answer , .security-question
+{
+    height : 20%;
+    width : 80%;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    gap : 0em;
+    
+}
+
+.account-info h3 
+{
+    text-align: start;
+    padding-bottom : 0.2em;
+    margin : 0;
+    color : var(--green);
+}
+
+.account-info p 
+{
+   text-align: start; 
+   margin : 0;
+   color : var(--white);
+   font-weight : bold;
+}
+
+
+
+.logout-container 
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    gap : 1em;
+}
+
+.logout-button 
+{
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1.2em;
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dashboard-button:hover 
+{
+    background-color: var(--grey);
+    transition: 0.3s;
+}
+
+.dashboard-button 
+{
+    background-color: var(--yellow);
+    color: var(--green);
+    font-size: 1.2em;
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-button:hover 
+{
+    background-color: var(--grey);
+    transition: 0.3s;
+}
+
+
+.grocery-list-container table , .ingredient-list-container table 
+{
+    margin-top : 0.5em;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; 
+}
+
+
+
+.grocery-list-container td , .ingredient-list-container td 
+{
+    padding-bottom: 0.2em; 
+    padding-top: 0.2em;
+    font-weight : bold;
+    color : white;
+}
+
+.lists-left
+{
+    text-align: left;
+    padding-left : 2em;
+    color : var(--white);
+}
+
+.lists-right 
+{
+
+    text-align: end;
+    padding-right : 2em;
+}
+
+
+
+.grocery-list-container button 
+{
+    background-color: var(--yellow); 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    transition: background-color 0.3s ease;
+}
+
+.grocery-list-container button:hover 
+{
+    background-color: #45a049; 
+}
+
+.grocery-list-container tr , .ingredient-list-container tr 
+{
+    margin-bottom: 10px;
+}
+
+.ingredient-list-container .list-right
+{
+    text-align: end;
+}
+
+.grocery-settings-title
+{
+    width : 100%;
+    height : 20%;
+
+    border-bottom: 0.25em solid var(--white);
+    padding-top : 0.5em;
+    padding-bottom : 0.5em;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    
+    font-size: 2em;
+    color : var(--white);
+}
+
+
+.reset-grocery-list, .print-ingredients-list
+{
+    margin-top : 1em;
+    width : 80%;
+    height : 10%;
+    display : flex;
+    justify-content : space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right : 1em;
+}
+
+
+.print-ingredients-list form , .reset-grocery-list form 
+{
+    width : 25%;
+}
+
+.reset-grocery-list span, .print-ingredients-list span 
+{
+    font-size: 1.2em;
+    font-weight : bold;
+    color : white;
+}
+
+
+.reset-grocery-list button, .print-ingredients-list button 
+{
+    background-color: var(--red);
+    width : 100%;
+    color: var(--white);
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reset-grocery-list button:hover , .print-ingredients-list button:hover
+{
+    background-color: var(--grey);
+    transition: 0.3s;
+}

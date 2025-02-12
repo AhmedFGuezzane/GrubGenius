@@ -1,0 +1,439 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan. 17, 2025, 6:56:43 p.m.
+    Author     : ahmed
+*/
+
+:root {
+  --green: #3a5a40;
+  --white: #FFF8E1;
+  --red: #E94E34;
+  --yellow: #FFC107;
+  --grey: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+/* SKELETON LOADER WHILE IT LOADS THE .JSP */
+
+.skeleton-loader-container
+{
+    width : 100%;
+    height : 100%;
+    display : flex;
+    justify-content : center;
+    align-items:start;
+    margin-top : 3em;
+}
+
+.skeleton-loader {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.skeleton-loader thead tr
+{
+    background-color: #f0f0f0;
+    animation: shimmer 1.5s infinite;
+}
+.skeleton-loader th,
+.skeleton-loader td {
+    background-color: #f0f0f0;
+    animation: shimmer 1.5s infinite;
+    height: 40px;
+    width: 100px;
+    margin: 5px;
+}
+
+.skeleton-loader th {
+    width: 150px; 
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+.skeleton-loader td::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        #f0f0f0 0%,
+        #e0e0e0 50%,
+        #f0f0f0 100%
+    );
+    background-size: 200px 100%;
+    animation: shimmer 1.5s infinite linear;
+}
+
+
+
+/* LANGUAGE DROPDOWN FOR ADMIN PANEL -- not incorporated yet */
+.dropdown-language-adminPanel {
+    position: absolute; 
+    top: 0.5em; 
+    right: 10px; 
+    width : 5%;
+    float: right;
+    
+}
+.adminPanel-lang-button {
+    
+    width : 100% !important;
+    font-size : 0.8em !important;
+    font-weight : bold;
+    padding : 0.8em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #e2eafc;
+    color : #71a5de;
+    border-radius : 0 !important;
+    
+}
+
+
+.dropdown-language-adminPanel .dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #e2eafc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 100%; 
+    
+}
+
+
+.dropdown-language-adminPanel .dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #71a5de;
+    font-weight : bold;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+
+.dropdown-language-adminPanel .dropdown-content a:hover {
+    background-color: #71a5de;
+    color: #e2eafc
+}
+
+
+.dropdown-language-adminPanel:hover .dropdown-content {
+    display: block;
+}
+
+
+.dashboard
+{
+    width : 100vw;
+    height : 100vh;
+    display : flex;
+}
+
+.dashboard-panel
+{
+    width : 10%;
+    height : 100%;
+    display : flex;
+    flex-direction : column;
+    background-color : #e2eafc;
+}
+
+.dashboard-view
+{
+    width : 90%;
+    height : 100%;
+    background-color: white;
+
+}
+
+.panel-title 
+{
+    height : 5%;
+    display : flex;
+    align-items: center;
+    justify-content : center;
+    font-size : 1.3em;
+    text-decoration : none;
+    color : white;
+    background-color : #71a5de;
+    font-weight : bold;
+}
+
+.panel-dashboard-title
+{
+    background-color : #00193b;
+    padding-left : 1.2em;
+    height : 5%;
+    display : flex;
+    align-items: center;
+    font-weight: bold;
+    font-size : 1em;
+    text-decoration: none;
+    color : white;
+}
+.panel-section
+{
+    padding-left : 2em;
+    height : 5%;
+    display : flex;
+    align-items: center;
+    font-weight: bold;
+    font-size : 1em;
+    text-decoration: none;
+    color : #71a5de;
+}
+
+.panel-section:hover
+{
+    background-color : #b6ccfe;
+    color : white;
+}
+
+.panel-section.active {
+    background-color: #b6ccfe; 
+    color: white; 
+}
+
+.view-navigation
+{
+    width : 100%;
+    height : 5%;
+    background-color : #adb5bd;
+    display : flex;
+    align-items : center;
+    padding-left : 1em;
+    color : white;
+}
+
+.dashboard-content-section {
+  
+  height : 95%;  
+  width : 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto; 
+  background-color : #dee2e6;
+}
+
+.dashboard-section-inner
+{
+    padding-top : 2em;
+    width : 90%;
+    height : 100%;
+    justify-content : center;
+    padding-bottom : 3em;
+}
+.accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+  color : #00193b;
+  border : none;
+}
+
+.accounts-table thead
+{
+    background-color : #71a5de;
+}
+.accounts-table th,
+.accounts-table td {
+  padding: 10px; 
+  text-align: left;
+  border : none;
+  }
+
+.accounts-table tbody tr:nth-child(odd) {
+  background-color: white; 
+}
+
+.accounts-table tbody tr:nth-child(even) {
+  background-color: #e2eafc; 
+}
+
+.accounts-table th.buttons-head {
+    text-align: center;
+}
+.buttons
+{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 1em;
+    border : none;
+}
+
+.accounts-table button 
+{
+    width : 7em;
+    background-color : #00193b;
+    color : white;
+    border : none;
+    padding : 0.5em;
+    border-radius : 0.5em;
+    
+}
+
+.create-account-message
+{
+    width : 40%;
+    background-color : red;
+    height : 3vh;
+    display : flex;
+    justify-content: start;
+    align-items: center;
+    padding-left : 1em;
+    border-radius : 0.5em;
+    font-weight: bold;
+}
+
+
+.create-account-form
+{
+    width : 100%;
+    border-radius: 1.5em;
+    display : flex;
+    flex-direction: column;
+    
+}
+
+.create-account-form label 
+{
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #333;
+  padding-top : 0.2em;
+  
+}
+
+.create-account-form input[type="text"],
+.create-account-form input[type="email"],
+.create-account-form input[type="password"],
+.create-account-form select 
+{
+  width: 50%;
+  padding: 0.8em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.create-account-form input[type="checkbox"] 
+{
+  margin-right: 0.5em;
+}
+
+.create-button 
+{
+  background-color: #71a5de;
+  color: white;
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 20%;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.create-button:hover 
+{
+  background-color: #3a5a40;
+}
+
+.create-button:active 
+{
+  background-color: #2f4a38;
+}
+
+.panel-buttons 
+{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    gap: 1em; 
+    background-color: #e2eafc;
+}
+
+.panel-buttons form 
+{
+    display: inline-block; 
+    margin: 0; 
+    width : 80%;
+}
+
+.panel-button 
+{
+    padding: 0.8em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #00193b;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.logout-button 
+{
+    width : 100%;
+}
+.site-button 
+{
+    width : 80%;
+}
+.panel-button:hover {
+    background-color: #71a5de;
+}
+
+
+.dashboard-first-view-container
+{
+    width : 100%;
+    height : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.first-view-message
+{
+    text-align: center;
+}
+
+.first-view-message h4
+{
+    color : #00193b;
+    font-size : 3em;
+    margin-bottom : 0.5em;
+}
+.first-view-message span
+{
+    font-weight : bold;
+    font-size : 1em;
+}
