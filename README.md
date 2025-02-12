@@ -28,6 +28,9 @@ Vous avez deux choix de connexion :
 🖼 **Capture d'écran**: `accounts_credentials.png` (liste des comptes de la base de données) disponible dans `/documents/captures`.
 s
 
+## License
+Ce projet est sous licence MIT.
+
 ---
 N'hésitez pas à contribuer, suggérer des améliorations ou signaler des problèmes ! 🚀
 
