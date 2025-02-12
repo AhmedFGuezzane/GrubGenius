@@ -1,28 +1,35 @@
-INFORMATIONS 
-------------------------------------------------------------------------------------------------------------------------------------------------
-Titre : TP Application Web
-Cours : 420-A11-BB PROGRAMMATION D'APPLICATIONS WEB
-Groupe : 01277
-Date : 01-02-2025
+# TP Application Web
 
-SPECIFICATIONS 
-------------------------------------------------------------------------------------------------------------------------------------------------
+## INFORMATIONS
+**Titre**: TP Application Web  
+**Cours**: 420-A11-BB PROGRAMMATION D'APPLICATIONS WEB  
+**Groupe**: 01277  
+**Date**: 01-02-2025  
 
-1) Le CahierDesExigences.pdf (dans le dossier /documents/pdf) est un résumé de toutes les exigences demandées du TP
-2) Le RapportComplet.pdf (dans le dossier /documents/pdf) est un rapport incluant toutes les classes et méthodes expliqueés plus profondement
-3) Le GuideInterfaceGraphique.pdf (dans le dossier /documents/pdf) est un guide de toutes les pages .jsp de l'Application Web ainsi que leur
-   fonctionnalités
+## SPECIFICATIONS
+1. 📄 **Cahier des Exigences** (`/documents/pdf/CahierDesExigences.pdf`) : Résumé des exigences du TP.
+2. 📑 **Rapport Complet** (`/documents/pdf/RapportComplet.pdf`) : Documentation détaillée des classes et méthodes.
+3. 🎨 **Guide Interface Graphique** (`/documents/pdf/GuideInterfaceGraphique.pdf`) : Explication des pages `.jsp` et de leurs fonctionnalités.
 
-Pour se Connecter vous avez deux choix : 
+## Connexion
+Vous avez deux choix de connexion :
 
-1) Connexion en mode administrateur - Acces au tableau de bord de l'administrateur
-username : john_doe
-password : password123
+### 🔹 Mode Administrateur
+- **Username**: john_doe
+- **Password**: password123
+- 📊 Accès au tableau de bord administrateur.
 
-2) Connexion en mode utilisateur 
-username : alex_brown 
-password : mypassword
+### 🔹 Mode Utilisateur
+- **Username**: alex_brown
+- **Password**: mypassword
 
-NB : Les champs dans le formulaire de login sont un peu affecté par l'image et le z-index. Nous n'avons pas trouvé de solution donc il faut 
-cliquer sur le champ au milieu du champ. 
-NB : Une capture d'ecran intitulée ''accounts_credentials.png'' de tous les comptes de la base de données est dans le dossier /documents/captures
+## Remarques
+⚠️ **Problème d'affichage**: Les champs du formulaire de login sont affectés par l'image et le `z-index`. Il faut cliquer au centre du champ pour entrer vos identifiants.  
+🖼 **Capture d'écran**: `accounts_credentials.png` (liste des comptes de la base de données) disponible dans `/documents/captures`.
+
+## License
+Ce projet est sous licence MIT.
+
+---
+N'hésitez pas à contribuer, suggérer des améliorations ou signaler des problèmes ! 🚀
+
