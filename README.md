@@ -26,9 +26,7 @@ Vous avez deux choix de connexion :
 ## Remarques
 ⚠️ **Problème d'affichage**: Les champs du formulaire de login sont affectés par l'image et le `z-index`. Il faut cliquer au centre du champ pour entrer vos identifiants.  
 🖼 **Capture d'écran**: `accounts_credentials.png` (liste des comptes de la base de données) disponible dans `/documents/captures`.
-
-## License
-Ce projet est sous licence MIT.
+s
 
 ---
 N'hésitez pas à contribuer, suggérer des améliorations ou signaler des problèmes ! 🚀
